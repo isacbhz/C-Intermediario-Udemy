@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso Intermediario Udemy", "Curso Intermediario Udemy\Curso Intermediario Udemy.csproj", "{11F2BD93-9F3B-4C0B-A01A-EE6816CD9A1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curso Intermediario Udemy", "Curso Intermediario Udemy\Curso Intermediario Udemy.csproj", "{11F2BD93-9F3B-4C0B-A01A-EE6816CD9A1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula 119 _Composicao_WorkerContract", "Aula 119 _Composicao_WorkerContract\Aula 119 _Composicao_WorkerContract.csproj", "{34D55403-0BCE-4242-9F5E-03693417D3CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{11F2BD93-9F3B-4C0B-A01A-EE6816CD9A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11F2BD93-9F3B-4C0B-A01A-EE6816CD9A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11F2BD93-9F3B-4C0B-A01A-EE6816CD9A1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D55403-0BCE-4242-9F5E-03693417D3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D55403-0BCE-4242-9F5E-03693417D3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D55403-0BCE-4242-9F5E-03693417D3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D55403-0BCE-4242-9F5E-03693417D3CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
