@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Globalization;
+using Aula_119__Composicao_WorkerContract.Entities;
+using Aula_119__Composicao_WorkerContract.Entities.Enums;
 
 namespace Aula_119__Composicao_WorkerContract
 {
@@ -6,7 +9,9 @@ namespace Aula_119__Composicao_WorkerContract
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+
+            Console.ReadLine();
         }
     }
 }
