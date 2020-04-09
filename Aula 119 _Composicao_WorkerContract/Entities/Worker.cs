@@ -10,7 +10,7 @@ namespace Aula_119__Composicao_WorkerContract.Entities
         public WorkerLevel Level { get; set; }
         public List<HourContract> Contracts { get; set; } = new List<HourContract>();
         public Department Department { get; set; }
-        
+
         public Worker()
         {
 
@@ -37,10 +37,15 @@ namespace Aula_119__Composicao_WorkerContract.Entities
             {
                 if (item.Date.Year == year && item.Date.Month == month)
                 {
-                    sum +=item.totalValue();
+                    sum += item.totalValue();
                 }
             }
             return sum;
-        }       
+        }
+        public override string ToString()
+        {
+            return "Name: "+Name+
+                "\nDepartament: "+Department.Name; 
+        }
     }
 }
