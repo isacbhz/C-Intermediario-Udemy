@@ -7,18 +7,15 @@ namespace Aula_119__Composicao_WorkerContract.Entities
     {
         public string Name { get; set; }
         public WorkLevel Level { get; set; }
-        public double BaseSalary { get; set; }
-        public int MyProperty { get; set; }
+        public double BaseSalary { get; set; }        
         public Department Department { get; set; }
         public List<HourContract> Contracts { get; set; } = new List<HourContract>();
         public Worker() { }
-
-        public Worker(string name, WorkLevel level, double baseSalary, int myProperty, Department department)
+        public Worker(string name, WorkLevel level, double baseSalary, Department department)
         {
             Name = name;
             Level = level;
-            BaseSalary = baseSalary;
-            MyProperty = myProperty;
+            BaseSalary = baseSalary;           
             Department = department;
         }
         public void AddContract(HourContract contract)
@@ -40,6 +37,11 @@ namespace Aula_119__Composicao_WorkerContract.Entities
                 }               
             }
             return sum;
+        }
+        public override string ToString()
+        {
+            return "Name: "+Name+
+                "\nDepartment: "+Department.Name; 
         }
     }
 }
