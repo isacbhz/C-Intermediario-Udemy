@@ -44,7 +44,7 @@ namespace Aula_119__Composicao_WorkerContract
             string moAndYe = Console.ReadLine();
             string[] dt = moAndYe.Split('/');
             Console.WriteLine(worker);
-            Console.Write("Income for "+moAndYe+" : "+worker.Income(int.Parse(dt[0]),int.Parse(dt[1])).ToString("F2",CultureInfo.InvariantCulture));
+            Console.Write("Income for "+moAndYe+" : "+xworker.Income(int.Parse(dt[0]),int.Parse(dt[1])).ToString("F2",CultureInfo.InvariantCulture));
             Console.ReadLine();
         }
     }
