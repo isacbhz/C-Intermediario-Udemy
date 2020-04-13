@@ -26,9 +26,9 @@ namespace Aula_119__Composicao_WorkerContract
             Console.Write("How many contracts to this worker? ");
             int numCont = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < numCont; i++)
+            for (int i = 1; i <= numCont; i++)
             {
-                Console.WriteLine("Enter #"+(i+1)+ " contract data:");
+                Console.WriteLine($"Enter #{i} contract data:");
                 Console.Write("Date (DD/MM/YYYY): ");
                 DateTime date = DateTime.Parse(Console.ReadLine());
                 Console.Write("Value per hour: " );
@@ -44,7 +44,7 @@ namespace Aula_119__Composicao_WorkerContract
             string moAndYe = Console.ReadLine();
             string[] dt = moAndYe.Split('/');
             Console.WriteLine(worker);
-            Console.Write("Income for "+moAndYe+" : "+xworker.Income(int.Parse(dt[0]),int.Parse(dt[1])).ToString("F2",CultureInfo.InvariantCulture));
+            Console.Write("Income for "+moAndYe+" : "+worker.Income(int.Parse(dt[0]),int.Parse(dt[1])).ToString("F2",CultureInfo.InvariantCulture));
             Console.ReadLine();
         }
     }
