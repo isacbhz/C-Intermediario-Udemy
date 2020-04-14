@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Aula_122_Exercicio_Enumeracao_e_composicao.Entities
 {
@@ -13,6 +14,12 @@ namespace Aula_122_Exercicio_Enumeracao_e_composicao.Entities
             Name = name;
             Email = email;
             BirthDate = birthDate;
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Client: " + Name + " (" + BirthDate.ToString("dd/MM/yyyy")+") - "+Email );
+            return sb.ToString();
         }
     }
 }

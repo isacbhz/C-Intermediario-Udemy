@@ -35,13 +35,14 @@ namespace Aula_122_Exercicio_Enumeracao_e_composicao
                 double proPrice = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 Console.Write("Quantity: ");
                 int proQtd = int.Parse(Console.ReadLine());
+                
                 Product prd = new Product(proName, proPrice);
                 OrderItem ordItem = new OrderItem(proQtd, proPrice, prd);
                 order.AddItem(ordItem);
             }
             Console.WriteLine();
-            Console.WriteLine("ORDER SUMMARY:");
-            Console.WriteLine(order);
+            Console.WriteLine("ORDER SUMMARY:");           
+            Console.WriteLine(order);            
             Console.ReadLine();
         }
     }
