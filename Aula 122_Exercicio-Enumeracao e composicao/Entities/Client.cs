@@ -15,3 +15,4 @@ namespace Aula_122_Exercicio_Enumeracao_e_composicao.Entities
             BirthDate = birthDate;
         }
     }
+}
