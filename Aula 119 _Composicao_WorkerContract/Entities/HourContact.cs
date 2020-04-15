@@ -1,23 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Aula_119__Composicao_WorkerContract.Entities
 {
-    class HourContract
+    class HourContact
     {
         public DateTime Date { get; set; }
         public double ValuePerHour { get; set; }
-        public int Hour { get; set; }
+        public int Hours { get; set; }
 
-        public HourContract() { }
-        public HourContract(DateTime date, double valuePerHour, int hour)
+        public HourContact() { }
+        public HourContact(DateTime date, double valuePerHour, int hours)
         {
             Date = date;
             ValuePerHour = valuePerHour;
-            Hour = hour;
+            Hours = hours;
         }
         public double totalValue()
         {
-            return ValuePerHour * Hour;
+            return ValuePerHour * Hours;
         }
     }
 }

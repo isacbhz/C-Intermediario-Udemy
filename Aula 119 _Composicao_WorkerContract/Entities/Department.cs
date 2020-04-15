@@ -1,4 +1,8 @@
-﻿namespace Aula_119__Composicao_WorkerContract.Entities
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Aula_119__Composicao_WorkerContract.Entities
 {
     class Department
     {
