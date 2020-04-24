@@ -37,7 +37,13 @@ namespace Aula_136_Exercicio_Heranca_poliformismo_abstract
             }
             Console.WriteLine();
             Console.WriteLine("TAXES PAID:");
-
+            double totalTaxes = 0.00;
+            foreach (Pessoa p in pessoaList)
+            {
+                Console.WriteLine(p);
+                totalTaxes += p.TaxesCalculation();
+            }
+            Console.WriteLine("TOTAL TAXES: $"+totalTaxes.ToString("F2",CultureInfo.InvariantCulture));
             Console.ReadLine();
         }
     }
