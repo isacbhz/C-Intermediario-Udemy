@@ -6,36 +6,22 @@ using System.Globalization;
 namespace Aula_136_Exercicio_Heranca_poliformismo_abstract.Entities
 {
     class PessoaFisica : Pessoa
-    {        
-        public double HealthExpenditures {get; set;}
-        public PessoaFisica(double healthExpenditures, string name, double anualIncome) : base(name,anualIncome)
-        {           
+    {
+        public double HealthExpenditures { get; set; }
+        public PessoaFisica(double healthExpenditures, string name, double anualIncome) : base(name, anualIncome)
+        {
             HealthExpenditures = healthExpenditures;
         }
         public override double TaxesCalculation()
         {
             double totalTaxe = 0.00;
             if (AnualIncome <= 20000.00)
-            {                
-                if (HealthExpenditures <= 0.00)
-                {
-                    totalTaxe = AnualIncome * 0.15;
-                }
-                else
-                {
-                    totalTaxe = (AnualIncome* 0.25) - (HealthTaxes(HealthExpenditures));                    
-                }
+            {
+                totalTaxe = (AnualIncome * 0.15) - (HealthTaxes(HealthExpenditures));
             }
             else
             {
-                if (HealthExpenditures <= 0.00)
-                {
-                    totalTaxe *= 0.25;
-                }
-                else
-                {
-                    totalTaxe = (AnualIncome * 0.25) - (HealthTaxes(HealthExpenditures));
-                }
+                totalTaxe = (AnualIncome * 0.25) - (HealthTaxes(HealthExpenditures));
             }
             return totalTaxe;
         }
@@ -47,7 +33,7 @@ namespace Aula_136_Exercicio_Heranca_poliformismo_abstract.Entities
         }
         public override string ToString()
         {
-            return Name+ " $"+TaxesCalculation().ToString("F2",CultureInfo.InvariantCulture); 
+            return Name + " $" + TaxesCalculation().ToString("F2", CultureInfo.InvariantCulture);
         }
     }
 }
