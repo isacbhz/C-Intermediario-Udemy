@@ -14,16 +14,27 @@ namespace Aula_136_Exercicio_Heranca_poliformismo_abstract.Entities
         }
         public override double TaxesCalculation()
         {
-            double totalTaxe = AnualIncome;
-            if (AnualIncome < 20000.00)
+            double totalTaxe = 0.00;
+            if (AnualIncome <= 20000.00)
             {                
                 if (HealthExpenditures <= 0.00)
                 {
-                    totalTaxe *= 0.15;
+                    totalTaxe = AnualIncome * 0.15;
                 }
                 else
                 {
-                    totalTaxe *= 0.25 + (HealthTaxes(HealthExpenditures));                    
+                    totalTaxe = (AnualIncome* 0.25) - (HealthTaxes(HealthExpenditures));                    
+                }
+            }
+            else
+            {
+                if (HealthExpenditures <= 0.00)
+                {
+                    totalTaxe *= 0.25;
+                }
+                else
+                {
+                    totalTaxe = (AnualIncome * 0.25) - (HealthTaxes(HealthExpenditures));
                 }
             }
             return totalTaxe;
@@ -31,7 +42,7 @@ namespace Aula_136_Exercicio_Heranca_poliformismo_abstract.Entities
         public double HealthTaxes(double healthExp)
         {
             double calc = 0.00;
-            calc = (healthExp * 0.25);
+            calc = (healthExp * 0.50);
             return calc;
         }
         public override string ToString()

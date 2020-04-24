@@ -15,14 +15,14 @@ namespace Aula_136_Exercicio_Heranca_poliformismo_abstract.Entities
         }
         public override double TaxesCalculation()
         {
-            double totalTaxe = AnualIncome;
+            double totalTaxe = 0.00;
             if (EmployeesQuant > 10)
             {
-                totalTaxe *= 0.14;
+                totalTaxe = AnualIncome * 0.14;
             }
             else
             {
-                totalTaxe *= 0.16;
+                totalTaxe = AnualIncome * 0.16;
             }
             return totalTaxe;
         }

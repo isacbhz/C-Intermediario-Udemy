@@ -5,9 +5,19 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula 119 _Composicao_WorkerContract", "Aula 119 _Composicao_WorkerContract\Aula 119 _Composicao_WorkerContract.csproj", "{34D55403-0BCE-4242-9F5E-03693417D3CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula 121_StringBuilder", "Aula  121_StringBuilder\Aula 121_StringBuilder.csproj", "{5A7460E2-C27F-40BE-83D7-D1FB1BF43BC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula 121_StringBuilder", "Aula  121_StringBuilder\Aula 121_StringBuilder.csproj", "{5A7460E2-C27F-40BE-83D7-D1FB1BF43BC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula 122_Exercicio-Enumeracao e composicao", "Aula 122_Exercicio-Enumeracao e composicao\Aula 122_Exercicio-Enumeracao e composicao.csproj", "{4F65D8D7-37D2-4477-A653-291BE28F3558}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula 122_Exercicio-Enumeracao e composicao", "Aula 122_Exercicio-Enumeracao e composicao\Aula 122_Exercicio-Enumeracao e composicao.csproj", "{4F65D8D7-37D2-4477-A653-291BE28F3558}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diversos", "Diversos\Diversos.csproj", "{DE806B96-A46F-43B8-A7FB-56463FF1D84F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula 130_Polimorfismo", "Aula 130_Polimorfismo\Aula 130_Polimorfismo.csproj", "{AEB5C4A3-645D-45A6-A083-9B0D6A7B0D54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula 132_Exercicio-HerancaPolimorfismo", "Aula 132_Exercicio-HerancaPolimorfismo\Aula 132_Exercicio-HerancaPolimorfismo.csproj", "{25006AF8-4DB9-4911-82F1-1900CFBBBD16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula 135_Metodos Abstratos", "Aula 135_Metodos Abstratos\Aula 135_Metodos Abstratos.csproj", "{4E95C665-ADB6-4B06-A3EB-E43CF2AA4016}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula 136_Exercicio_Heranca-poliformismo-abstract", "Aula 136_Exercicio_Heranca-poliformismo-abstract\Aula 136_Exercicio_Heranca-poliformismo-abstract.csproj", "{C494506D-9A77-49F9-8BA3-6BF0A8383AFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +37,26 @@ Global
 		{4F65D8D7-37D2-4477-A653-291BE28F3558}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F65D8D7-37D2-4477-A653-291BE28F3558}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F65D8D7-37D2-4477-A653-291BE28F3558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE806B96-A46F-43B8-A7FB-56463FF1D84F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE806B96-A46F-43B8-A7FB-56463FF1D84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE806B96-A46F-43B8-A7FB-56463FF1D84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE806B96-A46F-43B8-A7FB-56463FF1D84F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEB5C4A3-645D-45A6-A083-9B0D6A7B0D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEB5C4A3-645D-45A6-A083-9B0D6A7B0D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEB5C4A3-645D-45A6-A083-9B0D6A7B0D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEB5C4A3-645D-45A6-A083-9B0D6A7B0D54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25006AF8-4DB9-4911-82F1-1900CFBBBD16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25006AF8-4DB9-4911-82F1-1900CFBBBD16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25006AF8-4DB9-4911-82F1-1900CFBBBD16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25006AF8-4DB9-4911-82F1-1900CFBBBD16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E95C665-ADB6-4B06-A3EB-E43CF2AA4016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E95C665-ADB6-4B06-A3EB-E43CF2AA4016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E95C665-ADB6-4B06-A3EB-E43CF2AA4016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E95C665-ADB6-4B06-A3EB-E43CF2AA4016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C494506D-9A77-49F9-8BA3-6BF0A8383AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C494506D-9A77-49F9-8BA3-6BF0A8383AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C494506D-9A77-49F9-8BA3-6BF0A8383AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C494506D-9A77-49F9-8BA3-6BF0A8383AFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

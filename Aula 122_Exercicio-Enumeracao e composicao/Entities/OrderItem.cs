@@ -1,5 +1,9 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Aula_122_Exercicio_Enumeracao_e_composicao.Entities;
 using System.Globalization;
+
 namespace Aula_122_Exercicio_Enumeracao_e_composicao.Entities
 {
     class OrderItem
@@ -8,6 +12,7 @@ namespace Aula_122_Exercicio_Enumeracao_e_composicao.Entities
         public double Price { get; set; }
         public Product Product { get; set; }
         public OrderItem() { }
+
         public OrderItem(int quantity, double price, Product product)
         {
             Quantity = quantity;
@@ -21,8 +26,7 @@ namespace Aula_122_Exercicio_Enumeracao_e_composicao.Entities
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(Product.Name+", $"+Product.Price.ToString("F2",CultureInfo.InvariantCulture)
-                +", Quantity: "+Quantity+", Subtotal:$ "+subTotal().ToString("F2",CultureInfo.InvariantCulture));
+            sb.AppendLine(Product.Name + ", Quantity: " + Quantity + ", Subtotal: $" + subTotal().ToString("F2",CultureInfo.InvariantCulture));
             return sb.ToString();
         }
     }

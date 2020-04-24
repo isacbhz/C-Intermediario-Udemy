@@ -1,7 +1,7 @@
 ﻿using System;
+using System.Globalization;
 using Aula_122_Exercicio_Enumeracao_e_composicao.Entities;
 using Aula_122_Exercicio_Enumeracao_e_composicao.Entities.Enums;
-using System.Globalization;
 
 namespace Aula_122_Exercicio_Enumeracao_e_composicao
 {
@@ -12,37 +12,39 @@ namespace Aula_122_Exercicio_Enumeracao_e_composicao
             Console.WriteLine("Enter cliente data:");
             Console.Write("Name: ");
             string name = Console.ReadLine();
-            Console.Write("Email : ");
+            Console.Write("Email: ");
             string email = Console.ReadLine();
             Console.Write("Birth date (DD/MM/YYYY): ");
-            DateTime dtBirth = DateTime.Parse(Console.ReadLine());
+            DateTime bDate = DateTime.Parse(Console.ReadLine());            
+            Client client = new Client(name, email, bDate);           
+            
             Console.WriteLine("Enter order data:");
             Console.Write("Status: ");
             OrderStatus status = Enum.Parse<OrderStatus>(Console.ReadLine());
-            
-            Client client = new Client(name, email, dtBirth);
-            Order order = new Order(DateTime.Now,status,client);
+            Order order = new Order(DateTime.Now, status,client);
 
             Console.Write("How many items to this order? ");
-            int nItems = int.Parse(Console.ReadLine());
-
-            for (int i = 1; i <= nItems; i++)
-            {               
+            int nItem = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= nItem; i++)
+            {
                 Console.WriteLine($"Enter #{i} item data:");
                 Console.Write("Product name: ");
-                string proName = Console.ReadLine();
+                string prdName = Console.ReadLine();
                 Console.Write("Product price: ");
-                double proPrice = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                double prdPrice = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
                 Console.Write("Quantity: ");
-                int proQtd = int.Parse(Console.ReadLine());
+                int qtd = int.Parse(Console.ReadLine());
                 
-                Product prd = new Product(proName, proPrice);
-                OrderItem ordItem = new OrderItem(proQtd, proPrice, prd);
-                order.AddItem(ordItem);
+                Product product = new Product(prdName, prdPrice);
+                OrderItem orderItem = new OrderItem(qtd, prdPrice, product);
+                order.AddItem(orderItem);
             }
             Console.WriteLine();
-            Console.WriteLine("ORDER SUMMARY:");           
-            Console.WriteLine(order);            
+            Console.WriteLine("ORDER SUMMARY:");            
+            Console.WriteLine(order);
+            
+            Console.Write("Total price: $"+order.total().ToString("F2",CultureInfo.InvariantCulture));
+
             Console.ReadLine();
         }
     }
