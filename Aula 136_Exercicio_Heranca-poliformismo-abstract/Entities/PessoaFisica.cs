@@ -34,5 +34,9 @@ namespace Aula_136_Exercicio_Heranca_poliformismo_abstract.Entities
             calc = (healthExp * 0.25);
             return calc;
         }
+        public override string ToString()
+        {
+            return Name+ " $"+TaxesCalculation().ToString("F2",CultureInfo.InvariantCulture); 
+        }
     }
 }

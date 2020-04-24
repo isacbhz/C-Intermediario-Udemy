@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Globalization;
 
 namespace Aula_136_Exercicio_Heranca_poliformismo_abstract.Entities
 {
@@ -24,6 +25,10 @@ namespace Aula_136_Exercicio_Heranca_poliformismo_abstract.Entities
                 totalTaxe *= 0.16;
             }
             return totalTaxe;
+        }
+        public override string ToString()
+        {
+            return Name + " $" + TaxesCalculation().ToString("F2", CultureInfo.InvariantCulture); ; 
         }
     }
 }
