@@ -43,6 +43,7 @@ namespace Aula_136_Exercicio_Heranca_poliformismo_abstract
                 Console.WriteLine(p.ToString()); ;
                 totalTaxes += p.TaxesCalculation();
             }
+            Console.WriteLine();
             Console.WriteLine("TOTAL TAXES: $"+totalTaxes.ToString("F2",CultureInfo.InvariantCulture));
             Console.ReadLine();
         }
