@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula 130_Polimorfismo", "Au
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula 132_Exercicio-HerancaPolimorfismo", "Aula 132_Exercicio-HerancaPolimorfismo\Aula 132_Exercicio-HerancaPolimorfismo.csproj", "{25006AF8-4DB9-4911-82F1-1900CFBBBD16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula 135_Metodos Abstratos", "Aula 135_Metodos Abstratos\Aula 135_Metodos Abstratos.csproj", "{4E95C665-ADB6-4B06-A3EB-E43CF2AA4016}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula 135_Metodos Abstratos", "Aula 135_Metodos Abstratos\Aula 135_Metodos Abstratos.csproj", "{4E95C665-ADB6-4B06-A3EB-E43CF2AA4016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula 136_Exercicio_Heranca-poliformismo-abstract", "Aula 136_Exercicio_Heranca-poliformismo-abstract\Aula 136_Exercicio_Heranca-poliformismo-abstract.csproj", "{C494506D-9A77-49F9-8BA3-6BF0A8383AFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula 136_Exercicio_Heranca-poliformismo-abstract", "Aula 136_Exercicio_Heranca-poliformismo-abstract\Aula 136_Exercicio_Heranca-poliformismo-abstract.csproj", "{C494506D-9A77-49F9-8BA3-6BF0A8383AFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula 145_Exercicios-TryCatch", "Aula 145_Exercicios-TryCatch\Aula 145_Exercicios-TryCatch.csproj", "{ECD6B81F-00D7-44F2-8D89-4D843A16D5F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{C494506D-9A77-49F9-8BA3-6BF0A8383AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C494506D-9A77-49F9-8BA3-6BF0A8383AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C494506D-9A77-49F9-8BA3-6BF0A8383AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECD6B81F-00D7-44F2-8D89-4D843A16D5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECD6B81F-00D7-44F2-8D89-4D843A16D5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECD6B81F-00D7-44F2-8D89-4D843A16D5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECD6B81F-00D7-44F2-8D89-4D843A16D5F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
